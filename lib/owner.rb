@@ -29,7 +29,7 @@ class Owner
   end
 
   def cats
-    @cats << Cat.new()
+    @cats << Cat.new(name, owner)
   end
 
 end

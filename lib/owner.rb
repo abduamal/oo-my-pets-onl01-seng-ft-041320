@@ -29,7 +29,7 @@ class Owner
   end
 
   def cats
-    @cats << 
+    @cats << Cat.new
   end
 
 end

@@ -28,7 +28,7 @@ class Owner
     self.all.clear
   end
 
-  def cats(name)
+  def cats
     @cats << Cat.new(name)
   end
 

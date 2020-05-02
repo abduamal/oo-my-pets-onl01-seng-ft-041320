@@ -8,6 +8,8 @@ class Owner
     @name = name
     @species = "human"
     @@all << self
+    @cats = []
+    @dogs = []
   end
 
   def self.all
@@ -25,6 +27,5 @@ class Owner
   def self.reset_all
     self.all.clear
   end
-
 
 end

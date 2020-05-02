@@ -28,7 +28,5 @@ class Owner
     self.all.clear
   end
 
-  def cats
-    species.cats.all
-  end
+  
 end

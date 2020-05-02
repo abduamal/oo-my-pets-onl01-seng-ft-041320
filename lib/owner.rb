@@ -9,6 +9,10 @@ class Owner
     @@all << self
   end
 
+  def self.all
+    @@all
+  end
+
   def say_species
     "I am a #{self.species}."
   end
@@ -21,8 +25,8 @@ class Owner
     self.all.clear
   end
 
-  def self.all
-    @@all
+  def buy_cat(name)
+    Cat.new(name, self)
   end
 
 end

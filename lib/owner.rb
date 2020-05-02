@@ -28,7 +28,7 @@ class Owner
     self.all.clear
   end
 
-  def buy_cat(name)
+  def cats(name, owner)
     cat = Cat.new(name, self)
     @cats << cat
   end

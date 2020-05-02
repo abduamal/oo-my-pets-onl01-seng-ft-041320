@@ -26,9 +26,8 @@ class Owner
     self.all.clear
   end
 
-  def cats(name, owner)
-    @cats << Cat.new(name)
-    @cats
+  def cats
+    Cat.all.select { |cat| cat.artist == self}
   end
 
 end
